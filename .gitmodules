@@ -1,0 +1,15 @@
+[submodule ".upstream-repos/web/shells/tennc"]
+	path = .upstream-repos/web/shells/tennc
+	url = https://github.com/tennc/webshell.git
+[submodule ".upstream-repos/scripts/cortana/rsmudge"]
+	path = .upstream-repos/scripts/cortana/rsmudge
+	url = git://github.com/rsmudge/cortana-scripts.git
+[submodule ".upstream-repos/scripts/cortana/harmjoy"]
+	path = .upstream-repos/scripts/cortana/harmjoy
+	url = git://github.com/HarmJ0y/cortana.git
+[submodule ".upstream-repos/metasploit-stuff/darkoperator/plugins"]
+	path = .upstream-repos/metasploit-stuff/darkoperator/plugins
+	url = git://github.com/darkoperator/Metasploit-Plugins.git
+[submodule ".upstream-repos/metasploit-stuff/darkoperator/meterpreter-scripts"]
+	path = .upstream-repos/metasploit-stuff/darkoperator/meterpreter-scripts
+	url = git://github.com/darkoperator/Meterpreter-Scripts.git
