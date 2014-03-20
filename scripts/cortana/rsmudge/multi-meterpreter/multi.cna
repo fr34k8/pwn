@@ -38,7 +38,7 @@ popup host_top {
 	# figure out which sessions we have... (one per host)
 	foreach $host (@_) {
 		$s = keys(host_sessions($host));
-		if (size($s) > 0 && -iswinmeterpreter $s[0]) {
+		if (size($s) > 0) {
 			push(@sessions, $s[0]);
 		}
 	}
