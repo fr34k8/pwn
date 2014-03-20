@@ -13,9 +13,6 @@
 [submodule ".upstream-repos/metasploit-stuff/darkoperator/meterpreter-scripts"]
 	path = .upstream-repos/metasploit-stuff/darkoperator/meterpreter-scripts
 	url = git://github.com/darkoperator/Meterpreter-Scripts.git
-[submodule "blackarch"]
-	path = blackarch
-	url = github:ausec/blackarch.git
 [submodule "seclists"]
 	path = seclists
 	url = git://github.com/danielmiessler/SecLists.git
