@@ -1,6 +1,3 @@
-[submodule ".upstream-repos/web/shells/tennc"]
-	path = .upstream-repos/web/shells/tennc
-	url = https://github.com/tennc/webshell.git
 [submodule ".upstream-repos/scripts/cortana/rsmudge"]
 	path = .upstream-repos/scripts/cortana/rsmudge
 	url = git://github.com/rsmudge/cortana-scripts.git
@@ -13,6 +10,3 @@
 [submodule ".upstream-repos/metasploit-stuff/darkoperator/meterpreter-scripts"]
 	path = .upstream-repos/metasploit-stuff/darkoperator/meterpreter-scripts
 	url = git://github.com/darkoperator/Meterpreter-Scripts.git
-[submodule "seclists"]
-	path = seclists
-	url = git://github.com/danielmiessler/SecLists.git
