@@ -1,0 +1,170 @@
+[3.14.2014]
+     Released.: 2.6.0
+     Added....: Added basic JSON-RPC interface into the main Veil-Evasion.py launcher
+     Added....: c/meterpreter/rev_http[_service]
+
+[3.11.2014]
+     Modified.: Added backwards compatibility for shellcode generation.
+
+[3.9.2014]
+     Modified.: Modified shellcode generating calls of Veil to be compatible with recent MSF changes.
+
+[3.4.2014]
+     Released.: 2.5.1
+     Modified.: Removed smart_migrate from generated resource file due to forum thread saying it caused detection of the payload (https://www.veil-framework.com/forums/index.php/topic/90-auto-migrate/)
+     Modified.: Fixed bug in resource script generation for Backdoor Factory Payloads to now include the LHOST within the resource script.
+
+[2.15.2014]
+     Released.: 2.5.0
+     Added....: War payload wrapper and python file wrapper added as Veil-Evasion's first auxiliary modules
+
+[1.24.2014]
+     Released.: 2.4.5
+     Modified.: Reverted accidental change of migrate in controller, added war file check
+     Modified.: error checking introduced on prompting the user for the output file base
+     Modified.: added in tab-completion of LPORT and 'original_exe' in module menus
+
+[1.20.2014]
+     Released.: 2.4.4
+     Modified.: resource scripts now call post/windows/manage/smart_migrate instead of post/windows/manage/migrate
+
+[1.19.2014]
+     Released.: 2.4.3
+     Modified.: Fixed LHOST being properly parsed for resource script generation
+
+[1.18.2014]
+     Released.: 2.4.2
+     Added....: Added heap memory injection method to python payloads
+
+[1.16.2014]
+     Released.: 2.4.1
+     Added....: tools/cortana/veil_evasion.cna Cortana script for Armitage/Cobalt Strike integration
+
+[1.15.2014]
+     Released.: 2.4.0
+     Added....: python/meterpreter/rev_http[s] stagers
+     Added....: logic to check for version upgrades
+     Updated..: "Veil" references changed to "Veil-Evasion" and "Veil-Framework" as appropriate
+     Updated..: misc bug fixes
+     Updated..: updated README.md file
+
+[12.18.2013]
+     Released.: 2.3.1
+     Added....: virustotal checking command to the main menu
+
+[12.15.2013]
+     Released.: 2.3.0
+     Added....: cs/meterpreter/rev_tcp and python/meterpreter/rev_tcp stagers
+     Added....: added a hashing function to store/document sha1 hashes of Veil compiled payloads
+     Added....: fork of @mubix's vt-notify script to ./tools/vt-notify/
+     Added....: python payloads can be set to expire after X days
+     Added....: basic obfuscation into all C# payloads
+
+[12.3.2013]
+     Released.: 2.2.2
+     Added....: --overwrite option to overwrite existing source/.exe's produced
+     Added....: "clean" command and "--clean" option to clean out payload compiled/source folders
+     Modified.: payload import cleanup and various bug fixes, converted all tabs to spaces
+     Modified.: randomString() length now defaults to between 6-15 characters
+     Modified.: modules/common/randomizer.py integrated into modules/common/helpers.py
+     Modified.: modules/common/crypters.py integrated into modules/common/encryption.py
+     Modified.: payload modules rewritten with new module names (from above)
+     Modified.: encryption usage condolidated in encryption.py, python modules changed as appropriate
+     Modified.: bug fix to allow Veil to be used from any folder location
+     Modified.: payloadCompleter() now takes a dynamic command list
+     Modified.: internal command object changed from dictionary to list to preserve display order
+     Updated..: .dll patch in python self contained payloads (thanks to Achoo for letting us know)
+     
+[11.22.2013]
+     Released.: 2.2.1
+     Modified.: payload module loading now builds name based on menu structure dynamically, up to 5 levels deep
+     Modified.: reorganized payload menu structure and payload names
+     Modified.: payload.shortname no longer needed in payload modules
+     Modified.: -l command line flag consolidated into just -p, eliminated unnessary code
+     Modified.: menu UI/color tweaks
+
+[11.15.2013]
+     Released.: 2.2.0
+     Added....: c/meter_rev_tcp and c/meter_rev_tcp_service payloads
+     Modified.: LetterSub python payload to prevent potential issue with 'x' as a modified character
+     
+[10.23.2013] 
+     Released.: 2.1.2
+     Modified.: handler script generation now checks if the proper options exist in /etc/veil/settings.py
+     Modified.: handler scipts should now be generated for anything that requires a required LHOST parameter
+
+[10.15.2013] 
+     Released.: 2.1.1
+     Added....: msf handler.rc scripts are now generated, config options available in /etc/veil/settings.py
+     Modified.: bug fix in Backdoor Factory code to ensure code caves are valid
+     Modified.: updated the documentation in ./doc/
+
+[10.15.2013] 
+     Released.: 2.1.0
+     Added....: The Backdoor Factory (https://github.com/secretsquirrel/the-backdoor-factory) payload into native/*
+     Added....: Validation to LHOST and LPORT parameters when providing a value before prompted.  Thanks to issue #26 (Lesiah) for bringing this to out attention.
+     Added....: Default msfvenom options can now be specified in /etc/veil/settings.py
+     Re-Added.: Update functionality within Veil-Evasion was accidentally removed at some point.  This update re-adds that functionality to the main menu.
+     Modified.: self-contained .dll payloads now fixed
+
+[9.15.2013]
+     Released.: 2.0.6
+     Added....: --clean flag to setup script to force reinstallation of dependencies to fix issues
+     Added....: PYINSTALLER_PATH variable to Veil configuration to meet Kali FHS request
+     Added....: Python payloads now all have void pointer and virtualalloc injection methods
+     Modified.: supportfiles.py to use new PYINSTALLER_PATH variable
+     Modified.: Cosmetics
+     Modified.: Output folder for payloads moved to ~/veil-output/
+     Modfiied.: Configuration file for veil moved to /etc/veil/settings.py
+
+[08.29.2013]
+     Released.: Version 2.0.5
+     Modified.: Updated the file which the setup script searches for when installing/configuring Veil
+
+[08.18.2013]
+     Released.: Version 2.0.4
+     Modified.: Added 64 bit compatbility to Veil
+     Modified.: Added update functionality within Veil
+
+[07.22.2013]
+     Released.: Version 2.0.2
+     Modified.: Fixed powershell and c# payloads, thanks to think.pink for letting us know of the issue
+
+[06.28.2013]
+     Released.: Version 2.0.1
+     Modified.: file name overwrite bug fix, main menu exit bugfix
+     Modified.: local file path completer added to ./modules/common/completers.py
+     Modified.: controller.py can be called from external code, returns path of .exe
+
+[06.16.2013]
+     Released.: Version 2.0
+     Added....: payloads: powershell, c#, native (hyperion/pecrypter)
+     Added....: python encrypter "pyherion" functionality
+     Added....: ./tools/ directory "pyherion" crypter standalone
+     Added....: automatic loading of payload modules
+     Added....: automatic loading of metasploit payloads available and config option extraction
+     Added....: tab completion of available msfvenom payload modules
+     Added....: ability to specify any metasploit payload for shellcode generation
+     Added....: command line switches
+     Added....: Output folder for payload source/compiled .exes
+     Added....: ./doc/ folder for autogenerated pydoc documentation
+     Added....: ./config/* for configuration of various options
+     Added....: created tab completion for almost all menus
+     Modified.: Massive refactor of most of the code base
+     Modified.: Payload files won't overwrite (automatic renaming)
+     Modified.: Payload files properly modularized
+     Modified.: Eliminated /auxiliary/ folder, combined everything /common/
+     Modified.: Standardized doc strings so pydoc will work properly
+     Modified.: Cosmetics
+
+[06.01.2013]
+     Released.: Version 1.2
+     Added....: C-based payloads (many more coming)
+     Added....: Ability to use custom shellcode.
+     Modified.: Organized payloads by language.
+     Modified.: Split all payloads into single files.
+     Modified.: Cosmetics
+
+[05.31.2013]
+     Released.: Version 1.1.0
+     Modified.: Major revamp of codebase. Began framework-based structure.
